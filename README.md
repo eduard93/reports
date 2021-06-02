@@ -1,5 +1,16 @@
-# reports
+# InterSystems Reports Server Demo
 
+This repo demonstratess how to run InterSystems Reports Server in containers.
+
+# Prepequisites
+
+This software must be available for the demo to work:
+
+- [Docker](https://docs.docker.com/engine/install/)
+- (Optional) [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) - to clone this repo, otherwise download it as an archive in step 1
+- (Optional) [InterSystems Reports Designer](https://wrc.intersystems.com/) - to create new reports, if desired
+
+# Running
 
 1. Clone this repo: `git clone https://github.com/eduard93/reports.git`
 
