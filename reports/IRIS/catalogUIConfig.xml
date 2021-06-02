@@ -1,0 +1,11 @@
+<CatalogUI>                                  
+  <Database name="Data Source 1">                                                                    
+    <Query Version="10.0002" height="550" name="HoleFoodsTransactionsQuery" spaneHeight="265" type="Data Source 1" width="720" x="300" y="95">                                                                                                      
+      <QueryTable databaseType="Data Source 1" height="140" name="SalesTransaction" queryType="HoleFoodsTransactionsQuery" width="140" x="15" y="170"></QueryTable>                                                                                                      
+      <QueryTable databaseType="Data Source 1" height="140" name="Product" queryType="HoleFoodsTransactionsQuery" width="140" x="325" y="15"></QueryTable>                                                                                                      
+      <QueryTable databaseType="Data Source 1" height="140" name="Region" queryType="HoleFoodsTransactionsQuery" width="140" x="480" y="15"></QueryTable>                                                                                                      
+      <QueryTable databaseType="Data Source 1" height="140" name="Outlet" queryType="HoleFoodsTransactionsQuery" width="140" x="170" y="15"></QueryTable>                                                                                                      
+      <QueryTable databaseType="Data Source 1" height="140" name="Country" queryType="HoleFoodsTransactionsQuery" width="140" x="15" y="15"></QueryTable>                                                                    
+    </Query>                                  
+  </Database>
+</CatalogUI>

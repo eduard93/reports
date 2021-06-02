@@ -1,0 +1,25 @@
+version: '3.2'
+
+secrets:
+  config:
+    file: config.properties
+
+services:
+    iris:
+      hostname: iris
+      build:
+        context: iris
+        dockerfile: Dockerfile
+      ports:
+      - 1972:1972
+      - 52773:52773
+
+    reports:
+      secrets:
+        - config
+      image: containers.intersystems.com/intersystems/iscreports_server:17.1.1.21
+      volumes: 
+        - ./reports:/reports
+      ports:
+       - 8888:8888
+       - 1129:1129

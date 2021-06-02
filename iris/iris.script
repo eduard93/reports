@@ -1,0 +1,8 @@
+zn "USER"
+zpm "install samples-bi"
+
+zn "%SYS"
+do ##class(SYS.Container).QuiesceForBundling()
+do ##class(Security.Users).UnExpireUserPasswords("*")
+
+halt

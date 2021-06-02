@@ -1,0 +1,25 @@
+version: '3.2'
+
+services:
+    iris:
+      hostname: iris
+      build:
+        context: iris
+        dockerfile: Dockerfile
+      ports:
+      - 1972:1972
+      - 52773:52773
+
+    reports:
+      entrypoint: entrypoint.sh
+      image: containers.intersystems.com/intersystems/iscreports_server:17.1.1.21
+      volumes: 
+        - ./bin:/opt/LogiReport/Server/bin
+        - ./derby:/opt/LogiReport/Server/derby
+        - ./font:/opt/LogiReport/Server/font
+        - ./history:/opt/LogiReport/Server/history
+        - ./style:/opt/LogiReport/Server/style
+        - ./reports:/reports
+      ports:
+       - 8888:8888
+       - 1129:1129
