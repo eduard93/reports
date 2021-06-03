@@ -84,9 +84,18 @@ Now we're ready to start Reports with persisted data storage - this is how it wo
 
 9. Start InterSystems Reports Server without initialization: `docker-compose up -d`
 
-10. Create a new folder resource in `Public Reports` with Real Path: `/reports`. [Docs](https://devnet.logianalytics.com/hc/en-us/articles/1500009750141-Getting-and-Using-Resources-from-a-Real-Path). It should contain a catalog (which defines a connection to IRIS) and two reports (`reportset1` and `reportset2`). Run them (use `Run` button to see it in a browser and `Advanced Run` to choose between HTML, PDF, Excel, Text, RTF, XML, and PostScript formats). Here's what reports look like:
+10. Create a new folder resource in `Public Reports` with Real Path: `/reports`. [Docs](https://devnet.logianalytics.com/hc/en-us/articles/1500009750141-Getting-and-Using-Resources-from-a-Real-Path). To do that open `Public Reports` and select `Publish` > `From Server Machine`:
 
-![image](https://user-images.githubusercontent.com/5127457/120634327-c88e8a80-c473-11eb-90a0-d84aca52b0c4.png)
+![image](https://user-images.githubusercontent.com/5127457/120638494-da266100-c478-11eb-80a0-b89ba4e345db.png)
+
+Create a new folder pointing to `/reports`:
+
+![image](https://user-images.githubusercontent.com/5127457/120638907-6fc1f080-c479-11eb-965d-8346d603ada2.png)
+
+
+![image](https://user-images.githubusercontent.com/5127457/120638753-34bfbd00-c479-11eb-893f-0980ebe4f569.png)
+
+It should contain a catalog (which defines a connection to IRIS) and two reports (`reportset1` and `reportset2`). Run them (use `Run` button to see it in a browser and `Advanced Run` to choose between HTML, PDF, Excel, Text, RTF, XML, and PostScript formats). Here's what reports look like:
 
 ![image](https://user-images.githubusercontent.com/5127457/120632926-333ec680-c472-11eb-8367-c1769fc344ce.png)
 
