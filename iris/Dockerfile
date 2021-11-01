@@ -1,4 +1,4 @@
-FROM intersystemsdc/iris-community:2020.4.0.547.0-zpm
+FROM intersystemsdc/iris-community:2021.1.0.215.3-zpm
 
 USER ${ISC_PACKAGE_MGRUSER}
 
